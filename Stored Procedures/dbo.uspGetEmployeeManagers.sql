@@ -32,7 +32,7 @@ BEGIN
         ON [EMP_cte].[ManagerID] = e.[EmployeeID]
         INNER JOIN [Person].[Contact] c 
         ON e.[ContactID] = c.[ContactID]
-    ORDER BY [RecursionLevel], [ManagerID], [EmployeeID]
+ --   ORDER BY [RecursionLevel], [ManagerID], [EmployeeID]
     OPTION (MAXRECURSION 25) 
 END;
 GO
